@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InternLink — Student Register</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp .6s ease forwards; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-sky-100 flex items-center justify-center px-4">
+
+  <div class="fade-up bg-white/70 backdrop-blur-xl rounded-2xl shadow-lg p-6 sm:p-8 w-full max-w-md">
+
+    <div class="flex items-center justify-center gap-3 mb-5">
+      <div class="bg-violet-500 text-white rounded-lg p-2">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none">
+          <path d="M10 14a3 3 0 01-4.24 0l-1.5-1.5a3 3 0 114.24-4.24L10 9.76"
+                stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14 10a3 3 0 014.24 0l1.5 1.5a3 3 0 11-4.24 4.24L14 14.24"
+                stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <span class="text-violet-600 font-bold text-2xl">InternLink</span>
+    </div>
+
+    <h2 class="text-xl sm:text-2xl font-bold text-center text-slate-800 mb-1">
+      Create your student account
+    </h2>
+    <p class="text-center text-slate-600 text-sm mb-5">
+      Join InternLink and keep your internships organised.
+    </p>
+
+    <form method="POST" action="student_register.php" class="space-y-3">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="text-xs font-medium text-slate-700">First Name</label>
+          <input type="text" name="first_name" placeholder="e.g. John"
+            class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                   focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+        </div>
+        <div>
+          <label class="text-xs font-medium text-slate-700">Last Name</label>
+          <input type="text" name="last_name" placeholder="e.g. Sharma"
+            class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                   focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+        </div>
+      </div>
+
+      <div>
+        <label class="text-xs font-medium text-slate-700">Email</label>
+        <input type="email" name="email" placeholder="you@example.com"
+          class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                 focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+      </div>
+
+      <div>
+        <label class="text-xs font-medium text-slate-700">Phone</label>
+        <input type="text" name="phone" placeholder="10-digit mobile no."
+          class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                 focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="text-xs font-medium text-slate-700">Branch</label>
+          <input type="text" name="branch" placeholder="IT / CS / ENTC"
+            class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                   focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+        </div>
+        <div>
+          <label class="text-xs font-medium text-slate-700">Semester</label>
+          <input type="text" name="semester" placeholder="e.g. 5th"
+            class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                   focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="text-xs font-medium text-slate-700">Password</label>
+          <input type="password" name="password" placeholder="Create a password"
+            class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                   focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+        </div>
+        <div>
+          <label class="text-xs font-medium text-slate-700">Confirm Password</label>
+          <input type="password" name="confirm_password" placeholder="Re-enter password"
+            class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                   focus:ring-2 focus:ring-violet-400 outline-none text-sm" required>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-2 mt-1">
+        <input id="terms" type="checkbox"
+          class="mt-1 h-4 w-4 rounded border-slate-300 text-violet-500 focus:ring-violet-400" required>
+        <label for="terms" class="text-xs text-slate-600">
+          I agree to the
+          <a href="../T&C.html" class="text-violet-600 font-medium hover:underline">
+            Terms &amp; Conditions
+          </a>
+          and
+          <a href="#" class="text-violet-600 font-medium hover:underline">
+            Privacy Policy
+          </a>.
+        </label>
+      </div>
+
+      <button type="submit"
+        class="mt-3 w-full bg-violet-500 hover:bg-violet-600 text-white font-semibold py-2.5 rounded-full shadow-md transition text-sm">
+        Create Account
+      </button>
+    </form>
+
+    <div class="text-center mt-4 text-sm text-slate-600">
+      Already have an account?
+      <a href="student_login.html" class="text-violet-600 font-semibold hover:underline">Login</a>
+    </div>
+  </div>
+
+</body>
+</html>
