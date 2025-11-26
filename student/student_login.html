@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InternLink — Student Login</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp .6s ease forwards; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-sky-100 flex items-center justify-center px-4">
+
+  <div class="fade-up bg-white/70 backdrop-blur-xl rounded-2xl shadow-lg p-6 sm:p-7 w-full max-w-md">
+
+    <!-- Logo -->
+    <div class="flex items-center justify-center gap-3 mb-5">
+      <div class="bg-violet-500 text-white rounded-lg p-2">
+        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none">
+          <path d="M10 14a3 3 0 01-4.24 0l-1.5-1.5a3 3 0 114.24-4.24L10 9.76"
+                stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14 10a3 3 0 014.24 0l1.5 1.5a3 3 0 11-4.24 4.24L14 14.24"
+                stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <span class="text-violet-600 font-bold text-2xl">InternLink</span>
+    </div>
+
+    <h2 class="text-xl sm:text-2xl font-bold text-center text-slate-800 mb-1">
+      Student Login
+    </h2>
+    <p class="text-center text-slate-600 text-sm mb-5">
+      Sign in to access your internships.
+    </p>
+
+    <form method="POST" action="student_login.php" class="space-y-4">
+
+      <div>
+        <label class="text-xs font-medium text-slate-700">Email</label>
+        <input type="email" name="email" placeholder="you@example.com"
+          class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                 focus:ring-2 focus:ring-violet-400 outline-none text-sm"
+          required>
+      </div>
+
+      <div>
+        <label class="text-xs font-medium text-slate-700">Password</label>
+        <input type="password" name="password" placeholder="Your password"
+          class="w-full mt-1 px-3 py-2.5 rounded-xl bg-white border border-slate-200 shadow-sm
+                 focus:ring-2 focus:ring-violet-400 outline-none text-sm"
+          required>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-violet-500 hover:bg-violet-600 text-white font-semibold py-2.5 rounded-full shadow-md transition text-sm mt-2">
+        Login
+      </button>
+    </form>
+
+    <div class="text-center mt-4 text-sm text-slate-600">
+      Don’t have an account?
+      <a href="student_register.html" class="text-violet-600 font-semibold hover:underline">Register</a>
+    </div>
+  </div>
+
+</body>
+</html>
