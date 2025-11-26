@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InternLink — Your Professional Identity</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Global styles (your button animations, etc.) -->
+  <link rel="stylesheet" href="internlink.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <li><a href="admin/admin_login.php" class="hover:underline"></a></li>
+
+
+</head>
+
+<body class="bg-sky-100 text-slate-800 antialiased"
+  style="font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- NAV -->
+    <header class="bg-transparent py-6">
+      <div class="container mx-auto px-6 lg:px-8 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="bg-white/60 backdrop-blur rounded-lg p-2">
+            <svg class="w-7 h-7 text-violet-500" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <title>InternLink logo</title>
+              <path d="M10 14a3 3 0 01-4.24 0l-1.5-1.5a3 3 0 114.24-4.24L10 9.76" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14 10a3 3 0 014.24 0l1.5 1.5a3 3 0 11-4.24 4.24L14 14.24" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="text-violet-600 font-semibold text-lg">InternLink</span>
+        </div>
+
+        <!-- Right side buttons -->
+        <div class="flex items-center gap-3">
+          <!-- Student login -->
+          <a href="student/student_login.php"
+            class="hidden md:inline px-4 py-2 rounded-full border border-slate-200 bg-white text-sm btn-anim">
+            Student Login
+          </a>
+
+          <!-- Company login -->
+          <a href="company/company_login.php"
+            class="hidden md:inline px-4 py-2 rounded-full border border-slate-200 bg-white text-sm btn-anim">
+            Company Login
+          </a>
+
+          <!-- Admin panel -->
+          <a href="admin/admin_login.php"
+            class="px-4 py-2 rounded-full bg-slate-900 text-white text-sm shadow hover:bg-slate-800 btn-anim">
+            Admin
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main class="flex-1">
+      <section class="container mx-auto px-6 lg:px-8 py-12">
+        <div class="bg-white/50 rounded-2xl shadow-sm p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-violet-50 text-violet-600 px-3 py-1 rounded-full mb-6">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                <path d="M3 12c0-1.657 1.343-3 3-3h12c1.657 0 3 1.343 3 3s-1.343 3-3 3H6c-1.657 0-3-1.343-3-3z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="text-sm font-medium">InternLink</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+              Your Professional<br />Identity Starts Here
+            </h1>
+
+            <p class="text-slate-600 max-w-xl mb-6">
+              Secure your own domain name for resumes, portfolios, and internship applications. Make a memorable
+              impression.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <!-- Student CTA -->
+              <a href="student/student_register.html"
+                class="inline-block rounded-full bg-violet-500 text-white px-5 py-3 text-sm font-semibold shadow hover:bg-violet-600 btn-anim">
+                I’m a Student – Get Started
+              </a>
+
+              <!-- Company CTA -->
+              <a href="company/company_login.php"
+                class="inline-block rounded-full border border-violet-500 text-violet-600 px-5 py-3 text-sm font-semibold bg-white hover:bg-violet-50 btn-anim">
+                I’m a Company – Post Internships
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="flex justify-center lg:justify-end">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg w-full max-w-md">
+            <img alt="Person using laptop"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+              class="w-full h-64 object-cover" />
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="container mx-auto px-6 lg:px-8 py-12">
+    <h2 class="text-center text-2xl lg:text-3xl font-semibold mb-10">Why Get Your Own Domain?</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-xl p-6 shadow">
+        <div class="bg-violet-50 inline-flex p-3 rounded-lg mb-4">
+          <svg class="w-6 h-6 text-violet-500" viewBox="0 0 24 24" fill="none">
+            <path d="M3 12c0-1.657 1.343-3 3-3h12c1.657 0 3 1.343 3 3s-1.343 3-3 3H6c-1.657 0-3-1.343-3-3z"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h3 class="font-semibold mb-2">Personalized Identity</h3>
+        <p class="text-sm text-slate-500">
+          Craft a unique online identity that reflects your personal brand and aspirations.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow">
+        <div class="bg-violet-50 inline-flex p-3 rounded-lg mb-4">
+          <svg class="w-6 h-6 text-violet-500" viewBox="0 0 24 24" fill="none">
+            <path d="M3 12h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h3 class="font-semibold mb-2">Professional Branding</h3>
+        <p class="text-sm text-slate-500">
+          Elevate your professional image with a custom domain that stands out to employers.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow">
+        <div class="bg-violet-50 inline-flex p-3 rounded-lg mb-4">
+          <svg class="w-6 h-6 text-violet-500" viewBox="0 0 24 24" fill="none">
+            <path d="M4 12h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h3 class="font-semibold mb-2">Easy Sharing</h3>
+        <p class="text-sm text-slate-500">
+          Share your portfolio and resume effortlessly with a simple, memorable URL.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow">
+        <div class="bg-violet-50 inline-flex p-3 rounded-lg mb-4">
+          <svg class="w-6 h-6 text-violet-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h3 class="font-semibold mb-2">Verified Intern Profile</h3>
+        <p class="text-sm text-slate-500">
+          Build trust with a verified profile, enhancing your credibility and opportunities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="container mx-auto px-6 lg:px-8 py-12">
+    <h2 class="text-center text-2xl lg:text-3xl font-semibold mb-10">How It Works</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-6 shadow">
+        <div class="bg-sky-50 inline-flex p-3 rounded-lg mb-4">
+          <svg class="w-6 h-6 text-sky-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h4 class="font-semibold mb-2">Choose Your Unique Name</h4>
+        <p class="text-sm text-slate-500">
+          Select a personalized domain name that truly represents you and your professional aspirations.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow">
+        <div class="bg-sky-50 inline-flex p-3 rounded-lg mb-4">
+          <svg class="w-6 h-6 text-sky-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h4 class="font-semibold mb-2">Seamless Integration</h4>
+        <p class="text-sm text-slate-500">
+          Easily link your custom domain to your existing InternLink resume and portfolio pages.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow">
+        <div class="bg-sky-50 inline-flex p-3 rounded-lg mb-4">
+          <svg class="w-6 h-6 text-sky-500" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h4 class="font-semibold mb-2">Boost Your Visibility</h4>
+        <p class="text-sm text-slate-500">
+          Increase your online presence and make it easier for recruiters to find and remember you.
+        </p>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white/80 py-12 mt-12">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="bg-sky-500 text-white rounded-lg p-2">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M10 14a3 3 0 01-4.24 0l-1.5-1.5a3 3 0 114.24-4.24L10 9.76" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 10a3 3 0 014.24 0l1.5 1.5a3 3 0 11-4.24 4.24L14 14.24" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <span class="text-sky-600 font-semibold text-lg">InternLink</span>
+          </div>
+          <p class="text-sm text-slate-600">Connecting talent with opportunity.</p>
+        </div>
+
+        <div>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Internships</a></li>
+            <li><a href="student/student_login.php" class="hover:underline">Student Login</a></li>
+            <li><a href="company/company_login.php" class="hover:underline">Company Login</a></li>
+            <li><a href="admin/admin_login.php" class="hover:underline">Admin Panel</a></li>
+          </ul>
+
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-4">Contact Us</h4>
+          <p class="text-sm text-slate-600">info@internlink.com</p>
+          <p class="text-sm text-slate-600 mt-2">+91 _______ xxx</p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-4">Follow Us</h4>
+          <div class="flex items-center gap-4 text-slate-600">
+            <a href="#" class="hover:text-sky-600" aria-label="LinkedIn">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-2-2 2 2 0 00-2 2v6h-4v-12h4v2" />
+                <rect x="2" y="9" width="4" height="12" rx="1" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#" class="hover:text-sky-600" aria-label="Twitter">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+              </svg>
+            </a>
+            <a href="#" class="hover:text-sky-600" aria-label="Facebook">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a4 4 0 00-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-slate-200 my-8">
+
+      <div class="flex flex-col md:flex-row items-center justify-between text-sm text-slate-500">
+        <div>© 2025 InternLink. All rights reserved.</div>
+        <div class="mt-3 md:mt-0 flex items-center gap-2">
+          <span class="text-slate-400">Made with</span>
+          <span class="inline-flex items-center justify-center w-6 h-6 bg-violet-600 text-white rounded-full text-xs">
+            ♥
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+</body>
+
+</html>
